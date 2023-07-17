@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "40777ce4-71e8-4433-a155-899e6d347c93",
+		"name": "Test Dans Pro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "6853057"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/add-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8080/api/add-user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/login-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8080/api/login-user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/get-jobs?page=&description=&location=&full_time=false",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTG9naW4iOnsiX2lkIjoiNjRiNGY3YmFkNDlmNjcxMDEzMTRjM2M0IiwibmFtZSI6IkFkbWluIiwidXNlcm5hbWUiOiJBZG1pbiIsInBhc3N3b3JkIjoiJDJiJDEwJGtNNUUwcXhJNldHZzVRemxMdi8udC45N0o4TndDa3lsUlVOOGVHNzMuTHkxR1p3b1VSNW9XIiwiY3JlYXRlZEF0IjoiMjAyMy0wNy0xN1QwODoxMTozOC4wNjhaIiwidXBkYXRlZEF0IjoiMjAyMy0wNy0xN1QwODoxMTozOC4wNjhaIiwiX192IjowfSwiaWF0IjoxNjg5NTg4OTI0LCJleHAiOjE2ODk1OTI1MjR9.v6xW9DBUlE83EUM6fP__P7o8XeLURaqCAPpaUUqhG8g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/get-jobs?page=&description=&location=&full_time=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"get-jobs"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": ""
+						},
+						{
+							"key": "description",
+							"value": ""
+						},
+						{
+							"key": "location",
+							"value": ""
+						},
+						{
+							"key": "full_time",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/get-job-detail/32bf67e5-4971-47ce-985c-44b6b3860cdb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTG9naW4iOnsiX2lkIjoiNjRiNGY3YmFkNDlmNjcxMDEzMTRjM2M0IiwibmFtZSI6IkFkbWluIiwidXNlcm5hbWUiOiJBZG1pbiIsInBhc3N3b3JkIjoiJDJiJDEwJGtNNUUwcXhJNldHZzVRemxMdi8udC45N0o4TndDa3lsUlVOOGVHNzMuTHkxR1p3b1VSNW9XIiwiY3JlYXRlZEF0IjoiMjAyMy0wNy0xN1QwODoxMTozOC4wNjhaIiwidXBkYXRlZEF0IjoiMjAyMy0wNy0xN1QwODoxMTozOC4wNjhaIiwiX192IjowfSwiaWF0IjoxNjg5NTg4OTI0LCJleHAiOjE2ODk1OTI1MjR9.v6xW9DBUlE83EUM6fP__P7o8XeLURaqCAPpaUUqhG8g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://localhost:8080/api/get-job-detail/32bf67e5-4971-47ce-985c-44b6b3860cdb"
+			},
+			"response": []
+		}
+	]
+}
