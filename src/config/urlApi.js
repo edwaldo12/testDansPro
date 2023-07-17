@@ -1,0 +1,1 @@
+export const serviceUrl = "http://dev3.dansmultipro.co.id";
